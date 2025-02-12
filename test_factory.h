@@ -16,6 +16,8 @@
 #include <memory>
 #include "L14_longestCommonPrefix/L14_longestCommonPrefix.h"
 #include "L139_wordBreak/L139_wordBreak.h"
+#include "L140_wordBreak/L140_wordBreak.h"
+#include "L208_implementTrie/L208_implememtTrie.h"
 class test_factory {
 private:
     void buildSolution(string title) {
@@ -24,6 +26,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L139") {
             std::shared_ptr<L139_wordBreak> tmp= std::make_shared<L139_wordBreak>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L140") {
+            std::shared_ptr<L140_wordBreak> tmp= std::make_shared<L140_wordBreak>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L208") {
+            std::shared_ptr<L208_implememtTrie> tmp= std::make_shared<L208_implememtTrie>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
