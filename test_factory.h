@@ -18,6 +18,9 @@
 #include "L139_wordBreak/L139_wordBreak.h"
 #include "L140_wordBreak/L140_wordBreak.h"
 #include "L208_implementTrie/L208_implememtTrie.h"
+#include "L211_WordDictionary/L211_WordDictionary.h"
+#include "L212_findWords/L212_findWords.h"
+
 class test_factory {
 private:
     void buildSolution(string title) {
@@ -33,6 +36,14 @@ private:
         } else if (title == "L208") {
             std::shared_ptr<L208_implememtTrie> tmp= std::make_shared<L208_implememtTrie>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L211") {
+            std::shared_ptr<L211_WordDictionary> tmp= std::make_shared<L211_WordDictionary>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L212") {
+            std::shared_ptr<L212_findWords> tmp= std::make_shared<L212_findWords>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else {
+            cout << "no solution" << endl;
         }
     }
 public:
