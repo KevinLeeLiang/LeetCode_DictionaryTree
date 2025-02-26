@@ -196,4 +196,16 @@ inline void print_list(ListNode *head) {
     cout << endl;
     cout << "__________" << endl;
 }
+
+template<typename T>
+void print_vector_vector(vector<vector<T>> &vec) {
+    for (auto &item : vec) {
+        for (auto &item2 : item) {
+            cout << item2 << " ";
+        }
+        cout << endl;
+    }
+    cout <<  "__________" << endl;
+}
+
 #endif //DICTIONARYTREE_UTIL_H

@@ -20,7 +20,9 @@
 #include "L208_implementTrie/L208_implememtTrie.h"
 #include "L211_WordDictionary/L211_WordDictionary.h"
 #include "L212_findWords/L212_findWords.h"
-
+#include "L336_palindromePairs/L336_palindromePairs.h"
+#include "L386_lexicalOrder/L386_lexicalOrder.h"
+#include "util/util.h"
 class test_factory {
 private:
     void buildSolution(string title) {
@@ -41,6 +43,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L212") {
             std::shared_ptr<L212_findWords> tmp= std::make_shared<L212_findWords>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L336") {
+            std::shared_ptr<L336_palindromePairs> tmp= std::make_shared<L336_palindromePairs>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L386") {
+            std::shared_ptr<L386_lexicalOrder> tmp= std::make_shared<L386_lexicalOrder>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else {
             cout << "no solution" << endl;

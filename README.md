@@ -17,3 +17,7 @@ LeetCode字典树算法题的解题仓库
 [211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/add-and-search-word-data-structure-design/description/?envType=problem-list-v2&envId=trie) : [L211_WordDictionary](L211_WordDictionary)
 
 [212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/description/?envType=problem-list-v2&envId=trie) : [L212_findWords](L212_findWords)
+
+[336. 回文对](https://leetcode.cn/problems/palindrome-pairs/description/?envType=problem-list-v2&envId=trie) : [L336_palindromePairs](L336_palindromePairs)
+
+[386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/description/?envType=problem-list-v2&envId=trie) : [L386_lexicalOrder](L386_lexicalOrder)
