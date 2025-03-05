@@ -21,3 +21,7 @@ LeetCode字典树算法题的解题仓库
 [336. 回文对](https://leetcode.cn/problems/palindrome-pairs/description/?envType=problem-list-v2&envId=trie) : [L336_palindromePairs](L336_palindromePairs)
 
 [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/description/?envType=problem-list-v2&envId=trie) : [L386_lexicalOrder](L386_lexicalOrder)
+
+[421. 数组中两个数的最大异或值](https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/description/?envType=problem-list-v2&envId=trie) : [L421_findMaximumXOR](L421_findMaximumXOR)
+
+[440. 字典序的第K小字符](https://leetcode.cn/problems/kth-smallest-xor-value-in-a-range/description/?envType=problem-list-v2&envId=trie) : [L440_findKthNumber](L440_findKthNumber)

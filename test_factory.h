@@ -22,7 +22,8 @@
 #include "L212_findWords/L212_findWords.h"
 #include "L336_palindromePairs/L336_palindromePairs.h"
 #include "L386_lexicalOrder/L386_lexicalOrder.h"
-#include "util/util.h"
+#include "L421_findMaximumXOR/L421_findMaximumXOR.h"
+#include "L440_findKthNumber/L440_findKthNumber.h"
 class test_factory {
 private:
     void buildSolution(string title) {
@@ -49,6 +50,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L386") {
             std::shared_ptr<L386_lexicalOrder> tmp= std::make_shared<L386_lexicalOrder>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L421") {
+            std::shared_ptr<L421_findMaximumXOR> tmp= std::make_shared<L421_findMaximumXOR>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L440") {
+            std::shared_ptr<L440_findKthNumber> tmp= std::make_shared<L440_findKthNumber>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else {
             cout << "no solution" << endl;
