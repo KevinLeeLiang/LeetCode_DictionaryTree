@@ -26,6 +26,8 @@
 #include "L440_findKthNumber/L440_findKthNumber.h"
 #include "L472_findAllConcatenatedWordsInADict/L472_findAllConcatenatedWordsInDict.h"
 #include "L648_replaceWords/L648_replaceWords.h"
+#include "L676_MagicDictionary/L676_MagicDictionary.h"
+#include "L677_MapSum/L677_MapSum.h"
 
 class test_factory {
 private:
@@ -65,6 +67,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L648") {
             std::shared_ptr<L648_replaceWords> tmp= std::make_shared<L648_replaceWords>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L676") {
+            std::shared_ptr<L676_MagicDictionary> tmp= std::make_shared<L676_MagicDictionary>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L677") {
+            std::shared_ptr<L677_MapSum> tmp= std::make_shared<L677_MapSum>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else {
             cout << "no solution" << endl;
