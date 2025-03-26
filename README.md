@@ -25,3 +25,15 @@ LeetCode字典树算法题的解题仓库
 [421. 数组中两个数的最大异或值](https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/description/?envType=problem-list-v2&envId=trie) : [L421_findMaximumXOR](L421_findMaximumXOR)
 
 [440. 字典序的第K小字符](https://leetcode.cn/problems/kth-smallest-xor-value-in-a-range/description/?envType=problem-list-v2&envId=trie) : [L440_findKthNumber](L440_findKthNumber)
+
+[472. 连接词](https://leetcode.cn/problems/concatenated-words/description/?envType=problem-list-v2&envId=trie) :[L472_connectingCitiesWithMinimumCost](L472_findAllConcatenatedWordsInADict)
+
+[648. 单词替换](https://leetcode.cn/problems/replace-words/description/?envType=problem-list-v2&envId=trie) : [L648_replaceWords](L648_replaceWords)
+
+[676. 实现一个魔法字典](https://leetcode.cn/problems/implement-magic-dictionary/description/?envType=problem-list-v2&envId=trie) : [L676_MagicDictionary](L676_MagicDictionary)
+
+[677. 键值映射](https://leetcode.cn/problems/map-sum-pairs/description/?envType=problem-list-v2&envId=trie) : [L677_MapSum](L677_MapSum)
+
+[692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/description/?envType=problem-list-v2&envId=trie) : [L692_topKFrequent](L692_topKFrequent)
+
+[720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/description/?envType=problem-list-v2&envId=trie) : [L720_longestWord](L720_longestWord)

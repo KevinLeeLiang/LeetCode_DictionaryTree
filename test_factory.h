@@ -28,6 +28,8 @@
 #include "L648_replaceWords/L648_replaceWords.h"
 #include "L676_MagicDictionary/L676_MagicDictionary.h"
 #include "L677_MapSum/L677_MapSum.h"
+#include "L692_topKFrequent/L692_topKFrequent.h"
+#include "L720_longestWord/L720_longestWord.h"
 
 class test_factory {
 private:
@@ -74,8 +76,12 @@ private:
         } else if (title == "L677") {
             std::shared_ptr<L677_MapSum> tmp= std::make_shared<L677_MapSum>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
-        } else {
-            cout << "no solution" << endl;
+        } else if (title == "L692") {
+            std::shared_ptr<L692_topKFrequent> tmp= std::make_shared<L692_topKFrequent>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L720") {
+            std::shared_ptr<L720_longestWord> tmp= std::make_shared<L720_longestWord>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
 public:
