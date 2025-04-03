@@ -30,6 +30,8 @@
 #include "L677_MapSum/L677_MapSum.h"
 #include "L692_topKFrequent/L692_topKFrequent.h"
 #include "L720_longestWord/L720_longestWord.h"
+#include "L745_WordFilter/L745_WordFilter.h"
+#include "L792_numMatchingSubseq/L792_numMatchingSubseq.h"
 
 class test_factory {
 private:
@@ -81,6 +83,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L720") {
             std::shared_ptr<L720_longestWord> tmp= std::make_shared<L720_longestWord>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L745") {
+            std::shared_ptr<L745_WordFilter> tmp= std::make_shared<L745_WordFilter>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L792") {
+            std::shared_ptr<L792_numMatchingSubseq> tmp= std::make_shared<L792_numMatchingSubseq>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }

@@ -37,3 +37,7 @@ LeetCode字典树算法题的解题仓库
 [692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/description/?envType=problem-list-v2&envId=trie) : [L692_topKFrequent](L692_topKFrequent)
 
 [720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/description/?envType=problem-list-v2&envId=trie) : [L720_longestWord](L720_longestWord)
+
+[745. 前缀和后缀搜索](https://leetcode.cn/problems/prefix-and-suffix-search/description/?envType=problem-list-v2&envId=trie) : [L745_WordFilter](L745_WordFilter)
+
+[792. 匹配子序列的单词数](https://leetcode.cn/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=trie) : [L792_numMatchingSubseq](L792_numMatchingSubseq)
