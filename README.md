@@ -41,3 +41,5 @@ LeetCode字典树算法题的解题仓库
 [745. 前缀和后缀搜索](https://leetcode.cn/problems/prefix-and-suffix-search/description/?envType=problem-list-v2&envId=trie) : [L745_WordFilter](L745_WordFilter)
 
 [792. 匹配子序列的单词数](https://leetcode.cn/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=trie) : [L792_numMatchingSubseq](L792_numMatchingSubseq)
+
+[820. 单词的压缩编码](https://leetcode.cn/problems/short-encoding-of-words/description/?envType=problem-list-v2&envId=trie) : [L820_minimumLengthEncoding](L820_minimumLengthEncoding)

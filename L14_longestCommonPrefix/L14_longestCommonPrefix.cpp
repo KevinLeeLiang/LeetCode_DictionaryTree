@@ -25,7 +25,6 @@ bool L14_longestCommonPrefix::isCommonPrefix(vector<string>& strs, int len) {
         }
     }
     return true;
-
 }
 string L14_longestCommonPrefix::longestCommonPrefix(vector<string>& strs) {
     if (!strs.size()) {

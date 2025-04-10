@@ -32,6 +32,7 @@
 #include "L720_longestWord/L720_longestWord.h"
 #include "L745_WordFilter/L745_WordFilter.h"
 #include "L792_numMatchingSubseq/L792_numMatchingSubseq.h"
+#include "L820_minimumLengthEncoding/L820_minimumLengthEncoding.h"
 
 class test_factory {
 private:
@@ -89,6 +90,9 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L792") {
             std::shared_ptr<L792_numMatchingSubseq> tmp= std::make_shared<L792_numMatchingSubseq>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L820") {
+            std::shared_ptr<L820_minimumLengthEncoding> tmp= std::make_shared<L820_minimumLengthEncoding>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
