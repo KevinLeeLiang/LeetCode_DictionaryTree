@@ -13,18 +13,14 @@
 
 #include "L139_wordBreak.h"
 bool L139_wordBreak::wordBreak(string s, vector<string>& wordDict) {
-    auto word_set = unordered_set<string>();
-    for (auto word : wordDict) {
-        word_set.insert(word);
-    }
-    vector<bool>dp(s.size() + 1, false);
+    unordered_set<string> wordSet(wordDict.begin(), wordDict.end());
+    vector<bool> dp(s.size() + 1, false);
     dp[0] = true;
     for (int i = 1; i <= s.size(); ++i) {
         for (int j = 0; j < i; ++j) {
-            auto check = s.substr(j, i - j);
-            if (dp[j] && word_set.count(check)) {
-                dp[i] = true;
-                break;
+            string tmp = s.substr(j, i - j);
+            if (dp[j] && wordSet.find(tmp) != wordSet.end()) {
+                dp[i]= true;
             }
         }
     }

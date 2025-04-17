@@ -14,18 +14,19 @@
 #include "L140_wordBreak.h"
 
 void L140_wordBreak::backTrack(const string& s, int index) {
-    if (!this->ans_.count(index)) {
+    if (this->ans_.find(index) == this->ans_.end()) {
         if (index == s.size()) {
-            this->ans_[index] = {""};
-            return;
-        }
-        this->ans_[index] = {};
-        for (int i = index + 1; i <= s.size(); ++i) {
-            string word = s.substr(index, i - index);
-            if (this->wordSet_.count(word)) {
-                backTrack(s, i);
-                for (auto& item : this->ans_[i])
-                    this->ans_[index].push_back(item.empty() ? word : word + " " + item);
+            this->ans_[index] = vector<string>({""});
+        } else {
+            this->ans_[index] = {};
+            for (int i = index; i <= s.size(); i++) {
+                string sub = s.substr(index, i - index);
+                if (this->wordSet_.find(sub) != this->wordSet_.end()) {
+                    backTrack(s, i);
+                    for (auto& item : this->ans_[i]) {
+                        this->ans_[index].push_back(item.empty() ? sub: sub + " " + item);
+                    }
+                }
             }
         }
     }
@@ -35,7 +36,7 @@ vector<string> L140_wordBreak::wordBreak(string s, vector<string>& wordDict) {
     this->ans_.clear();
     this->wordSet_ = unordered_set<string>(wordDict.begin(), wordDict.end());
     backTrack(s, 0);
-    return this->ans_[0];
+    return ans_[0];
 }
 
 void L140_wordBreak::test(){
