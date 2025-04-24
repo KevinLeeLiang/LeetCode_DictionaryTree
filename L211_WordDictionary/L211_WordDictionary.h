@@ -20,10 +20,7 @@ namespace L211 {
     struct TrieNode {
         vector<TrieNode *> child;
         bool isEnd;
-        TrieNode() {
-            this->child = vector<TrieNode *>(26,nullptr);
-            this->isEnd = false;
-        }
+        TrieNode() : child(26, nullptr), isEnd(false) { }
     };
 
 
@@ -48,7 +45,7 @@ namespace L211 {
             insert(this->trie_, word);
         }
         bool search(string word) {
-            return dfs(word, 0, trie_);
+            return dfs(word, 0, this->trie_);
         }
         bool dfs(const string & word,int index,TrieNode * node) {
             if (index == word.size()) {
@@ -56,13 +53,14 @@ namespace L211 {
             }
             char ch = word[index];
             if (ch >= 'a' && ch <= 'z') {
-                TrieNode * child = node->child[ch - 'a'];
-                if (child != nullptr && dfs(word, index + 1, child)) {
-                    return true;
+                if (node->child[ch - 'a'] != nullptr) {
+                    return dfs(word, index + 1, node->child[ch - 'a']);
+                } else {
+                    return false;
                 }
             } else if (ch == '.') {
-                for (int i = 0; i < 26; i++) {
-                    TrieNode * child = node->child[i];
+                for (int i = 0; i < 26; ++i) {
+                    TrieNode* child = node->child[i];
                     if (child != nullptr && dfs(word, index + 1, child)) {
                         return true;
                     }
