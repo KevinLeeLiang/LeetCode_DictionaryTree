@@ -13,8 +13,8 @@
 
 #include "L212_findWords.h"
 void L212_findWords::insertTrie(TrieNode *root, const string &word) {
-    TrieNode *node = root;
-    for (auto c : word){
+    TrieNode* node = root;
+    for (char c : word) {
         if (!node->children.count(c)) {
             node->children[c] = new TrieNode();
         }
@@ -32,19 +32,17 @@ bool L212_findWords::dfs(vector<vector<char>>& board, int i, int j, TrieNode* no
     if (node->word.size() > 0) {
         res.insert(node->word);
     }
-
     board[i][j] = '#';
     for (int k = 0; k < 4; ++k) {
         int nx = i + dirs[k][0];
         int ny = j + dirs[k][1];
         if (nx >= 0 && nx < board.size() && ny >= 0 && ny < board[0].size()) {
             if (board[nx][ny] != '#') {
-                dfs(board, nx, ny, node,res);
+                dfs(board, nx, ny, node, res);
             }
         }
     }
     board[i][j] = ch;
-
     return true;
 }
 

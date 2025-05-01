@@ -14,31 +14,28 @@
 #include "L336_palindromePairs.h"
 bool L336_palindromePairs::f(string s, int left, int right) {
     while (left < right) {
-        if (s[left] != s[right]) {
-            return false;
-        }
-        left++;
-        right--;
+        if (s[left++] != s[right--])return false;
     }
     return true;
 }
 vector<vector<int>> L336_palindromePairs::palindromePairs(vector<string> &words) {
-    unordered_map<string, int> map;
-    set<int> word_size_set;
+    unordered_map<string, int>map;
+    set<int>word_size_set;
     int n = words.size();
-    for (int i = 0; i < n; i++) {
-        map[words[i]] = i;
+    for(int i=0;i<n;i++){
+        map[words[i]]=i;
         word_size_set.insert(words[i].size());
     }
     vector<vector<int>> res;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < words.size(); ++i) {
         string word_re = words[i];
         reverse(word_re.begin(), word_re.end());
         if (map.count(word_re) && map[word_re] != i) {
             res.push_back({map[word_re], i});
         }
         int length = word_re.size();
-        for (int d = 0; d < length; ++d) {
+        for (auto it = word_size_set.begin(); *it != length; ++it) {
+            int d = *it;
             if (f(word_re, 0, length - d - 1) && map.count(word_re.substr(length-d))){
                 res.push_back({i, map[word_re.substr(length-d)]});
             }
