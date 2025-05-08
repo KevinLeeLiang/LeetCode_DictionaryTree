@@ -14,9 +14,8 @@
 #include "L386_lexicalOrder.h"
 
 void L386_lexicalOrder::dfs(int cur, int n, vector<int> &res) {
-    if (cur > n) {
-        return ;
-    }
+    if (cur > n)
+        return;
     res.push_back(cur);
     for (int i = 0; i < 10; ++i) {
         dfs(cur * 10 + i, n, res);
@@ -24,6 +23,8 @@ void L386_lexicalOrder::dfs(int cur, int n, vector<int> &res) {
 }
 
 vector<int> L386_lexicalOrder::lexicalOrder(int n) {
+    if (n == 0)
+        return {};
     vector<int> res;
     for (int i = 1; i < 10; ++i) {
         dfs(i, n, res);
