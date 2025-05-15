@@ -47,12 +47,13 @@ int L421_findMaximumXOR::check(int num) {
         } else {
             if (cur->left) {
                 cur = cur->left;
-                x = x * 2 + 1;
+                x =  x * 2 + 1;
             } else {
                 cur = cur->right;
-                x = x * 2;
+                x = x*2;
             }
         }
+
     }
     return x;
 }

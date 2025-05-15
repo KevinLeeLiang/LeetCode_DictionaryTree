@@ -15,10 +15,10 @@
 
 int L440_findKthNumber::calculateSteps(int n, long long curr, long long next) {
     int steps = 0;
-    while (curr <= next) {
+    while (curr <= n) {
         steps += min((long long)n + 1, next) - curr;
-        curr*=10;
-        next*=10;
+        curr *= 10;
+        next *= 10;
     }
     return steps;
 }
