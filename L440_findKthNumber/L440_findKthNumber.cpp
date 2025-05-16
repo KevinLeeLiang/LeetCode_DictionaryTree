@@ -41,7 +41,7 @@ int L440_findKthNumber::findKthNumber(int n, int k) {
 
 void L440_findKthNumber::test() {
     int n = 13;
-    int k = 2;
+    int k = 3;
     cout << findKthNumber(n, k) << endl;
     n = 1;
     k = 1;
