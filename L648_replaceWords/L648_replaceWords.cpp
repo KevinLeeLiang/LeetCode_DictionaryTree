@@ -49,6 +49,7 @@ string L648_replaceWords::replaceWords(vector<string> &dictionary, string senten
             ans+= " ";
 
     }
+
     return ans;
 }
 

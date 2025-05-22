@@ -48,6 +48,7 @@ void L472_findAllConcatenatedWordsInDict::insert(const string& word) {
         node = node->children[index];
     }
     node->is_end = true;
+    
 }
 
 vector<string> L472_findAllConcatenatedWordsInDict::findAllConcatenatedWordsInADict(vector<string> &words) {
