@@ -23,7 +23,7 @@ namespace L677 {
         int sum(string prefix);
     private:
         unordered_map<string, int> map;
-        unordered_map<string, int> prefix_map;
+        unordered_map<string, int> prefixmap;
     };
 }
 class L677_MapSum : public LeetcodeDictionaryTree {

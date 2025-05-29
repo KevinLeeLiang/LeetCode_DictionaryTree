@@ -20,15 +20,14 @@ MagicDictionary::MagicDictionary() {
 }
 
 void MagicDictionary::buildDict(vector<string> dict) {
-    for (auto &&word : dict) {
+    for (auto&& word : dict) {
         Trie* cur = root;
-        for (auto &&c : word) {
+        for (auto&& c : word) {
             if (!cur->child[c - 'a']) {
                 cur->child[c - 'a'] = new Trie();
             }
             cur = cur->child[c - 'a'];
         }
-        cur->is_finished = true;
     }
 }
 
