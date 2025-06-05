@@ -14,23 +14,17 @@
 #include "L692_topKFrequent.h"
 vector<string> L692_topKFrequent::topKFrequent(vector<string> &words, int k) {
     unordered_map<string, int> map;
-    for (auto word : words) {
+    for (auto &word: words) {
         map[word]++;
     }
-    vector<pair<int, string>> vec;
-    for (auto it = map.begin(); it != map.end(); it++) {
-        vec.push_back(make_pair(it->second, it->first));
+    vector<string> ws;
+    for (auto &pair: map) {
+        ws.push_back(pair.first);
     }
-    sort(vec.begin(), vec.end(), [](pair<int, string> &a, pair<int, string> &b) {
-        if (a.first == b.first) {
-            return a.second < b.second;
-        }
+    sort(ws.begin(), ws.end(), [&map](string &a, string &b) {
+        return map[a] == map[b] ? a < b : map[a] > map[b];
     });
-    vector<string> result;
-    for (int i = 0; i < k; i++) {
-        result.push_back(vec[i].second);
-    }
-    return result;
+    return vector<string>(ws.begin(), ws.begin() + k);
 }
 void L692_topKFrequent::test() {
     vector<string> words = {"i", "love", "leetcode", "i", "love", "coding"};
