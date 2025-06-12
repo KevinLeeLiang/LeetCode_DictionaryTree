@@ -33,7 +33,7 @@ int L792_numMatchingSubseq::numMatchingSubseq(string s, vector<string> &words) {
             }
         }
     }
-    
+
     return res;
 }
 
