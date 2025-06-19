@@ -17,7 +17,6 @@ int L820_minimumLengthEncoding::minimumLengthEncoding(vector<string> &words) {
     unordered_set<string> good(words.begin(), words.end());
     for (const string &word : words) {
         for (int i = 1; i < word.size(); ++i) {
-            cout << word.substr(i) << endl;
             good.erase(word.substr(i));
         }
     }

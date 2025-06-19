@@ -33,6 +33,8 @@
 #include "L745_WordFilter/L745_WordFilter.h"
 #include "L792_numMatchingSubseq/L792_numMatchingSubseq.h"
 #include "L820_minimumLengthEncoding/L820_minimumLengthEncoding.h"
+#include "L1023_camelMatch/L1023_camelMatch.h"
+#include "L1032_StreamChecker/L1032_StreamChecker.h"
 
 class test_factory {
 private:
@@ -93,6 +95,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L820") {
             std::shared_ptr<L820_minimumLengthEncoding> tmp= std::make_shared<L820_minimumLengthEncoding>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1023") {
+            std::shared_ptr<L1023_camelMatch> tmp= std::make_shared<L1023_camelMatch>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1032") {
+            std::shared_ptr<L1032_StreamChecker> tmp= std::make_shared<L1032_StreamChecker>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
