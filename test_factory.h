@@ -35,6 +35,8 @@
 #include "L820_minimumLengthEncoding/L820_minimumLengthEncoding.h"
 #include "L1023_camelMatch/L1023_camelMatch.h"
 #include "L1032_StreamChecker/L1032_StreamChecker.h"
+#include "L1178_findNumOfValidWords/L1178_findNumOfValidWords.h"
+#include "L1233_removeSubfolders/L1233_removeSubfolders.h"
 
 class test_factory {
 private:
@@ -101,6 +103,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L1032") {
             std::shared_ptr<L1032_StreamChecker> tmp= std::make_shared<L1032_StreamChecker>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1178") {
+            std::shared_ptr<L1178_findNumOfValidWords> tmp= std::make_shared<L1178_findNumOfValidWords>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1233") {
+            std::shared_ptr<L1233_removeSubfolders> tmp= std::make_shared<L1233_removeSubfolders>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }

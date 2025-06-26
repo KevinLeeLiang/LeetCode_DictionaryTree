@@ -47,3 +47,7 @@ LeetCode字典树算法题的解题仓库
 [1023. 驼峰式匹配](https://leetcode.cn/problems/camelcase-matching/description/?envType=problem-list-v2&envId=trie) : [L1023_camelMatch](L1023_camelMatch)
 
 [1032. 字符流](https://leetcode.cn/problems/stream-of-characters/description/?envType=problem-list-v2&envId=trie) : [L1032_StreamChecker](L1032_StreamChecker)
+
+[1178. 猜字谜](https://leetcode.cn/problems/number-of-valid-words-for-two-sentences/description/?envType=problem-list-v2&envId=trie) : [L1178_matchPlayersAndTrainers](L1178_matchPlayersAndTrainers)
+
+[1233. 删除子文件夹](https://leetcode.cn/problems/remove-sub-folders-from-the-filesystem/description/?envType=problem-list-v2&envId=trie) : [L1233_removeSubfolders](L1233_removeSubfolders)
