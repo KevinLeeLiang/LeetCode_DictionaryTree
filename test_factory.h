@@ -37,6 +37,8 @@
 #include "L1032_StreamChecker/L1032_StreamChecker.h"
 #include "L1178_findNumOfValidWords/L1178_findNumOfValidWords.h"
 #include "L1233_removeSubfolders/L1233_removeSubfolders.h"
+#include "L1268_suggestedProducts/L1268_suggestedProducts.h"
+#include "L1316_distinctEchoSubstrings/L1316_distinctEchoSubstrings.h"
 
 class test_factory {
 private:
@@ -109,6 +111,12 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L1233") {
             std::shared_ptr<L1233_removeSubfolders> tmp= std::make_shared<L1233_removeSubfolders>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1268") {
+            std::shared_ptr<L1268_suggestedProducts> tmp= std::make_shared<L1268_suggestedProducts>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1316") {
+            std::shared_ptr<L1316_distinctEchoSubstrings> tmp= std::make_shared<L1316_distinctEchoSubstrings>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }

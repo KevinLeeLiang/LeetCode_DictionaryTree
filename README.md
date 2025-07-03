@@ -51,3 +51,7 @@ LeetCode字典树算法题的解题仓库
 [1178. 猜字谜](https://leetcode.cn/problems/number-of-valid-words-for-two-sentences/description/?envType=problem-list-v2&envId=trie) : [L1178_matchPlayersAndTrainers](L1178_matchPlayersAndTrainers)
 
 [1233. 删除子文件夹](https://leetcode.cn/problems/remove-sub-folders-from-the-filesystem/description/?envType=problem-list-v2&envId=trie) : [L1233_removeSubfolders](L1233_removeSubfolders)
+
+[1268. 搜索推荐系统](https://leetcode.cn/problems/search-suggestions-system/description/?envType=problem-list-v2&envId=trie) : [L1268_suggestedProducts](L1268_suggestedProducts)
+
+[1316. 不同的循环子字符串](https://leetcode.cn/problems/distinct-echo-substrings/description/?envType=problem-list-v2&envId=trie) : [L1316_distinctEchoSubstrings](L1316_distinctEchoSubstrings)
