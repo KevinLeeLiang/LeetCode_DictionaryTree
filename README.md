@@ -55,3 +55,7 @@ LeetCode字典树算法题的解题仓库
 [1268. 搜索推荐系统](https://leetcode.cn/problems/search-suggestions-system/description/?envType=problem-list-v2&envId=trie) : [L1268_suggestedProducts](L1268_suggestedProducts)
 
 [1316. 不同的循环子字符串](https://leetcode.cn/problems/distinct-echo-substrings/description/?envType=problem-list-v2&envId=trie) : [L1316_distinctEchoSubstrings](L1316_distinctEchoSubstrings)
+
+[1707. 与数组中元素的最大异或值](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array/description/?envType=problem-list-v2&envId=trie) : [L1707_maximumXor](L1707_maximumXor)
+
+[1803. 统计异或值在范围内的数对有多少](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/description/?envType=problem-list-v2&envId=trie) : [L1803_countPairs](L1803_countPairs)

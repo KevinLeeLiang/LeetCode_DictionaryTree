@@ -39,6 +39,7 @@
 #include "L1233_removeSubfolders/L1233_removeSubfolders.h"
 #include "L1268_suggestedProducts/L1268_suggestedProducts.h"
 #include "L1316_distinctEchoSubstrings/L1316_distinctEchoSubstrings.h"
+#include "L1707_maximizeXor/L1707_maximizeXor.h"
 
 class test_factory {
 private:
@@ -117,6 +118,9 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L1316") {
             std::shared_ptr<L1316_distinctEchoSubstrings> tmp= std::make_shared<L1316_distinctEchoSubstrings>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1707") {
+            std::shared_ptr<L1707_maximizeXor> tmp= std::make_shared<L1707_maximizeXor>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
