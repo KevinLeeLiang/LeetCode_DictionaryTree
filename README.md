@@ -59,3 +59,5 @@ LeetCode字典树算法题的解题仓库
 [1707. 与数组中元素的最大异或值](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array/description/?envType=problem-list-v2&envId=trie) : [L1707_maximumXor](L1707_maximumXor)
 
 [1803. 统计异或值在范围内的数对有多少](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/description/?envType=problem-list-v2&envId=trie) : [L1803_countPairs](L1803_countPairs)
+
+[1938. 查询最大基因差](https://leetcode.cn/problems/maximum-genetic-difference-query/description/?envType=problem-list-v2&envId=trie) : [L1938_maxGeneticDifference](L1938_maxGeneticDifference)

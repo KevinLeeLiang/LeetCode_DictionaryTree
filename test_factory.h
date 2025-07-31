@@ -41,6 +41,7 @@
 #include "L1316_distinctEchoSubstrings/L1316_distinctEchoSubstrings.h"
 #include "L1707_maximizeXor/L1707_maximizeXor.h"
 #include "L1803_countPairs/L1803_countPairs.h"
+#include "L1938_maxGeneticDifference/L1938_maxGeneticDifference.h"
 
 class test_factory {
 private:
@@ -125,6 +126,9 @@ private:
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         } else if (title == "L1803") {
             std::shared_ptr<L1803_countPairs> tmp= std::make_shared<L1803_countPairs>();
+            solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
+        } else if (title == "L1938") {
+            std::shared_ptr<L1938_maxGeneticDifference> tmp= std::make_shared<L1938_maxGeneticDifference>();
             solution_ = std::dynamic_pointer_cast<LeetcodeDictionaryTree>(tmp);
         }
     }
